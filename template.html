@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="node_modules/@xterm/xterm/css/xterm.css" />
+    <script src="node_modules/@xterm/xterm/lib/xterm.js"></script>
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira%20Code:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    #terminal {
+      width: fit-content;
+      background-color: #000000;
+      padding: 0px;
+    }
+  </style>
+  <body>
+    <div id="terminal"></div>
+    <script>
+
+      const term = new Terminal({
+        convertEol: true,
+        cols: 31,
+        rows: 2,
+        theme: {"background":"#000000","foreground":"#e0e0e0"},
+        fontFamily: "Fira Code",
+        fontSize: 14,
+        fontWeight: undefined,
+        fontWeightBold: undefined,
+        letterSpacing: 1,
+        lineHeight: undefined
+      });
+
+      term.open(document.getElementById('terminal'));
+      term.write("\u001b[38;2;128;243;32mT\u001b[39m\u001b[38;2;166;223;12mh\u001b[39m\u001b[38;2;200;193;2mi\u001b[39m\u001b[38;2;227;158;3ms\u001b[39m\u001b[38;2;246;121;16m \u001b[39m\u001b[38;2;255;83;38mi\u001b[39m\u001b[38;2;252;50;69ms\u001b[39m\u001b[38;2;238;24;105m \u001b[39m\u001b[38;2;214;7;143ma\u001b[39m\u001b[38;2;182;1;179m \u001b[39m\u001b[38;2;146;6;211mh\u001b[39m\u001b[38;2;108;22;236mo\u001b[39m\u001b[38;2;72;48;251mr\u001b[39m\u001b[38;2;41;81;255mr\u001b[39m\u001b[38;2;17;117;247mi\u001b[39m\u001b[38;2;4;155;229mb\u001b[39m\u001b[38;2;1;191;202ml\u001b[39m\u001b[38;2;10;221;169me\u001b[39m\u001b[38;2;30;242;131m \u001b[39m\u001b[38;2;58;253;93mr\u001b[39m\u001b[38;2;93;254;59ma\u001b[39m\u001b[38;2;130;243;31mi\u001b[39m\u001b[38;2;168;221;11mn\u001b[39m\u001b[38;2;201;192;2mb\u001b[39m\u001b[38;2;229;156;4mo\u001b[39m\u001b[38;2;247;118;17mw\u001b[39m\u001b[38;2;255;81;40m \u001b[39m\u001b[38;2;251;49;71mp\u001b[39m\u001b[38;2;237;23;107mu\u001b[39m\u001b[38;2;212;7;145mk\u001b[39m\u001b[38;2;180;1;181me\u001b[39m\u001b[38;2;144;7;213m\u001b[39m\n\u001b[38;2;144;7;213m\u001b[39m\u001b[38;2;106;24;237ml\u001b[39m\u001b[38;2;70;49;251mi\u001b[39m\u001b[38;2;39;83;255mn\u001b[39m\u001b[38;2;16;120;247me\u001b[39m\u001b[38;2;3;157;228m \u001b[39m\u001b[38;2;2;193;201ms\u001b[39m\u001b[38;2;11;222;166mh\u001b[39m\u001b[38;2;31;243;129mo\u001b[39m\u001b[38;2;60;254;91mw\u001b[39m\u001b[38;2;95;253;57mi\u001b[39m\u001b[38;2;132;242;29mn\u001b[39m\u001b[38;2;170;220;10mg\u001b[39m\u001b[38;2;203;190;1m \u001b[39m\u001b[38;2;230;154;4mo\u001b[39m\u001b[38;2;248;116;18mf\u001b[39m\u001b[38;2;255;79;41mf\u001b[39m\u001b[38;2;251;47;73m \u001b[39m\u001b[38;2;235;22;109mt\u001b[39m\u001b[38;2;211;6;147mr\u001b[39m\u001b[38;2;178;1;183mu\u001b[39m\u001b[38;2;142;7;215me\u001b[39m\u001b[38;2;104;25;238mc\u001b[39m\u001b[38;2;68;51;252mo\u001b[39m\u001b[38;2;38;85;255ml\u001b[39m\u001b[38;2;15;122;246mo\u001b[39m\u001b[38;2;3;159;227mr\u001b[39m\u001b[38;2;2;194;199m!\u001b[39m");
+    </script>
+  </body>
+</html>
